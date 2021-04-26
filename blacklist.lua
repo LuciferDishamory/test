@@ -183,7 +183,7 @@ end
 
 function update()
   local fpath = os.getenv('TEMP') .. '\\testing_version.json' -- куда будет качаться наш файлик для сравнения версии
-  downloadUrlToFile('https://jsonbin.io/6086e735c7df3422f7fe4533/2', fpath, function(id, status, p1, p2) -- ссылку на ваш гитхаб где есть строчки которые я ввёл в теме или любой другой сайт
+  downloadUrlToFile('https://jsonbin.io/6086e735c7df3422f7fe4533/3', fpath, function(id, status, p1, p2) -- ссылку на ваш гитхаб где есть строчки которые я ввёл в теме или любой другой сайт
     if status == dlstatus.STATUS_ENDDOWNLOADDATA then
     local f = io.open(fpath, 'r') -- открывает файл
     if f then
